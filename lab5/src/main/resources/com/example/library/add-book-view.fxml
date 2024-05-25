@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.GridPane?>
+
+<GridPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.library.AddBookController" hgap="10" vgap="10">
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10"/>
+    </padding>
+    <TextField fx:id="codeField" promptText="Code" GridPane.rowIndex="0" GridPane.columnIndex="0" GridPane.columnSpan="2"/>
+    <TextField fx:id="titleField" promptText="Title" GridPane.rowIndex="1" GridPane.columnIndex="0" GridPane.columnSpan="2"/>
+    <TextField fx:id="authorField" promptText="Author" GridPane.rowIndex="2" GridPane.columnIndex="0" GridPane.columnSpan="2"/>
+    <TextField fx:id="yearField" promptText="Year" GridPane.rowIndex="3" GridPane.columnIndex="0" GridPane.columnSpan="2"/>
+    <TextField fx:id="copiesField" promptText="Copies" GridPane.rowIndex="4" GridPane.columnIndex="0" GridPane.columnSpan="2"/>
+    <Button text="Add" onAction="#addBook" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+    <Button text="Cancel" onAction="#cancel" GridPane.rowIndex="5" GridPane.columnIndex="1"/>
+</GridPane>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.library.MainController">
+    <top>
+        <HBox fx:id="topHBox" spacing="10">
+            <TextField fx:id="searchField" promptText="Enter book title or author" />
+            <Button text="Search" onAction="#handleSearch"/>
+            <Button text="View All Books" onAction="#viewAllBooks"/>
+            <Button text="Add New Book" onAction="#showAddBookDialog"/>
+            <Button text="Delete Selected Book" onAction="#deleteSelectedBook"/>
+        </HBox>
+    </top>
+    <center>
+        <ListView fx:id="bookListView"/>
+    </center>
+</BorderPane>
